@@ -1,3 +1,7 @@
-# Boilerplate 2024 Client
+# PlantBid Code Test
 
-TBD
+## Instructions
+
+1. Copy `secrets.template.ts` into `secrets.ts` and add your API Key.
+2. `npm install`
+3. `npm start`
