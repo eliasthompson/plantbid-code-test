@@ -2,13 +2,11 @@ import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch as useDispatchUntyped, useSelector as useSelectorUntyped } from 'react-redux';
 
 import { exampleApi } from '@store/apis/example';
-import { uiSlice } from '@store/slices/ui';
 
 export const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(exampleApi.middleware),
   reducer: {
     [exampleApi.reducerPath]: exampleApi.reducer,
-    [uiSlice.reducerPath]: uiSlice.reducer,
   },
 });
 
